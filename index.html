@@ -8,7 +8,7 @@
 	
 	<body>
 	
-	  访问人数:<input id="pn" type="text"></input>
+	  访问人数: <label id="pn" ></label>
 	
 	</body>
 	
@@ -22,7 +22,7 @@
         dataType: 'json',
         success: function(data) {  
            for(var i=0;i<data.length;i++){
-         	document.getElementById("pn").innerHTML=data[i].num;    
+         	document.getElementById("pn").innerHTML=data[i].value;    
           }
         }
     }); 

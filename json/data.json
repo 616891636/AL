@@ -1,7 +1,7 @@
 [
     {
-        "name": "1位",
-        "text": "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=60515982",
-        "num": "5"
+        "key": "访问人数",
+        "text": "记录访问人数的值",
+        "value": "5"
     }
 ]
