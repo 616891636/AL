@@ -3,13 +3,29 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+	<script type="text/javascript" src="js/jquery-1.6.1.js" ></script>
 	</head>
+	
 	<body>
 	
-	
+	  访问人数:<input id="pn" type="text"></input>
 	
 	</body>
 	
 	
-	
+	<script>
+	var load_url="json/data.json";
+ $.ajax({
+        data:{},//这是要传给action的值，action中用getset获取可用
+        type: 'get',//struts2使用post不乱码
+        url: load_url,
+        dataType: 'json',
+        success: function(data) {  
+           for(var i=0;i<data.length;i++){
+         	document.getElementById("pn").innerHTML=data[i].num;    
+          }
+        }
+    }); 
+		
+	</script>
 </html>
